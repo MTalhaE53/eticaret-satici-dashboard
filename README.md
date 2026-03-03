@@ -97,5 +97,5 @@ Bu proje [MIT](LICENSE) lisansı altında lisanslanmıştır.
 ---
 
 <p align="center">
-  Geliştiren: <b>[Senin Adın]</b>
+  Geliştiren: <b>[Muhammet Talha Eyüboğlu]</b>
 </p>
