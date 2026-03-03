@@ -1,0 +1,3 @@
+https://skxdxevzrovtkkaxtmno.supabase.co
+sb_publishable_thBzmqtUeEGIvF9IDIDIPA_JVjHR19u
+postgresql://postgres:[DN73frXOr4VCC9ev]@db.skxdxevzrovtkkaxtmno.supabase.co:5432/postgres

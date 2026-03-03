@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "E-Ticaret Satıcı Dashboard",
+  "version": "1.0.0",
+  "description": "Trendyol ve Hepsiburada satıcı panellerinden sipariş, stok ve yorum verilerini otomatik olarak dashboard'a aktarır.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "alarms",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://partner.trendyol.com/*",
+    "https://merchant.hepsiburada.com/*",
+    "https://*.supabase.co/*",
+    "http://localhost:*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://partner.trendyol.com/*"
+      ],
+      "js": [
+        "content/trendyol.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://merchant.hepsiburada.com/*"
+      ],
+      "js": [
+        "content/hepsiburada.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "http://localhost:*/*",
+        "https://*.vercel.app/*"
+      ],
+      "js": [
+        "content/dashboard.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
