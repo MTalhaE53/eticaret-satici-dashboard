@@ -8,8 +8,8 @@
 // ============================================================
 
 // ⚠️ BURAYA KENDİ SUPABASE BİLGİLERİNİZİ GİRİN
-const SUPABASE_URL = 'https://skxdxevzrovtkkaxtmno.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_thBzmqtUeEGIvF9IDIDIPA_JVjHR19u';
+const SUPABASE_URL = 'https://buraya_ekle.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_buraya_ekle';
 
 /**
  * Basit Supabase REST API istemcisi

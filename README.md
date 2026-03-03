@@ -63,8 +63,7 @@ graph LR
 
 ### 1️⃣ Veritabanı (Supabase)
 1. [Supabase](https://supabase.com) üzerinden yeni bir proje oluşturun.
-2. `supabase/supabase_schema.sql` dosyasını SQL Editor'da çalıştırın.
-3. `supabase/auto_seller_trigger.sql` dosyasını çalıştırarak otomatik satıcı kaydını aktif edin.
+2. `supabase/full_setup.sql` dosyasını SQL Editor'da çalıştırın. (Bu dosya tüm tabloları, RLS politikalarını ve trigger'ları tek seferde kurar.)
 
 ### 2️⃣ Chrome Eklentisi
 1. `chrome-extension/lib/supabase.js` içindeki API bilgilerini güncelleyin.
